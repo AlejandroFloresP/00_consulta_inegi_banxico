@@ -1,0 +1,7 @@
+setup.py
+indicators_inegi.egg-info/PKG-INFO
+indicators_inegi.egg-info/SOURCES.txt
+indicators_inegi.egg-info/dependency_links.txt
+indicators_inegi.egg-info/entry_points.txt
+indicators_inegi.egg-info/requires.txt
+indicators_inegi.egg-info/top_level.txt

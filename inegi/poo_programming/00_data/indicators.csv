@@ -1,0 +1,79 @@
+494098,PIB,INEGI,Valor de produccion,Trimestral
+493932,PIB (actividades secundarias),INEGI,Valor de produccion,Trimestral
+493967,PIB (actividades terciarias),INEGI,Valor de produccion,Trimestral
+653110,EMS Remuneracion total,INEGI,Encuesta Mensual de Servicios,Mensual
+653033,EMS Personal Ocupado,INEGI,Encuesta Mensual de Servicios,Mensual
+652963,EMS Ingresos,INEGI,Encuesta Mensual de Servicios,Mensual
+631637,EMOE Indicador Pedidos Manufactureros,INEGI,Encuesta Mensual de Opinion Empresarial,Mensual
+697755,EMOE Tendencia Indicador Global de Opinion Empresarial,INEGI,Encuesta Mensual de Opinion Empresarial,Mensual
+697758,EMOE Confianza Indicador Global de Opinion Empresarial,INEGI,Encuesta Mensual de Opinion Empresarial,Mensual
+654040,EMEC Comercio al por mayor Remuneracion,INEGI,Encuesta Mensual Sobre Empresas Comerciales,Mensual
+654033,EMEC Comercio al por mayor Personal ocupado,INEGI,Encuesta Mensual Sobre Empresas Comerciales,Mensual
+654047,EMEC Comercio al por mayor Ingresos,INEGI,Encuesta Mensual Sobre Empresas Comerciales,Mensual
+654439,EMEC Comercio al por menor Personal ocupado,INEGI,Encuesta Mensual Sobre Empresas Comerciales,Mensual
+654446,EMEC Comercio al por menor Remuneracion,INEGI,Encuesta Mensual Sobre Empresas Comerciales,Mensual
+654453,EMEC Comercio al por menor Ingresos,INEGI,Encuesta Mensual Sobre Empresas Comerciales,Mensual
+497635,Consumo privado Indice Total,INEGI,Consumo Privado en el Mercado Interior,Mensual
+497642,Consumo privado Indice Bienes y servicios,INEGI,Consumo Privado en el Mercado Interior,Mensual
+497649,Consumo privado Indice Bienes ,INEGI,Consumo Privado en el Mercado Interior,Mensual
+497656,Consumo privado Indice Servicios,INEGI,Consumo Privado en el Mercado Interior,Mensual
+497663,Consumo privado Indice Bienes importados,INEGI,Consumo Privado en el Mercado Interior,Mensual
+127598,Balanza Exportaciones (FOB) Total,INEGI,Balanza Comercial,Mensual
+127601,Balanza Importaciones (FOB) Total,INEGI,Balanza Comercial,Mensual
+912,Balanza Exportaciones (FOB) Petroleras Total,INEGI,Balanza Comercial,Mensual
+921,Balanza Exportaciones (FOB) No Petroleras Total,INEGI,Balanza Comercial,Mensual
+922,Balanza Exportaciones (FOB) No Petroleras Agropecuario,INEGI,Balanza Comercial,Mensual
+923,Balanza Exportaciones (FOB) No Petroleras Extractivas,INEGI,Balanza Comercial,Mensual
+924,Balanza Exportaciones (FOB) No Petroleras Manufactureras Total,INEGI,Balanza Comercial,Mensual
+206754,Balanza Exportaciones (FOB) No Petroleras Manufactureras Automotriz,INEGI,Balanza Comercial,Mensual
+206755,Balanza Exportaciones (FOB) No Petroleras Manufactureras Resto,INEGI,Balanza Comercial,Mensual
+933,Balanza Importaciones (FOB) Bienes de Consumo Total,INEGI,Balanza Comercial,Mensual
+206130,Balanza Importaciones (FOB) Bienes de Consumo Petroleras,INEGI,Balanza Comercial,Mensual
+206131,Balanza Importaciones (FOB) Bienes de Consumo No Petroleras,INEGI,Balanza Comercial,Mensual
+934,Balanza Importaciones (FOB) Bienes de Intermedios Total,INEGI,Balanza Comercial,Mensual
+206132,Balanza Importaciones (FOB) Bienes de Intermedios Petroleras,INEGI,Balanza Comercial,Mensual
+206133,Balanza Importaciones (FOB) Bienes de Intermedios No Petroleras,INEGI,Balanza Comercial,Mensual
+935,Balanza Importaciones (FOB) Bienes de Capital,INEGI,Balanza Comercial,Mensual
+897,Balanza Saldo,INEGI,Balanza Comercial,Mensual
+496464,Actividad industrial Total de la actividad industrial Indice,INEGI,Actividad Industrial,Mensual
+496471,Actividad industrial Minera Indice,INEGI,Actividad Industrial,Mensual
+496499,"Actividad industrial Generacion, transmision y distribucion de energia electrica, suministro de agua y de gas por ductos al consumidor final Indice",INEGI,Actividad Industrial,Mensual
+496520,Actividad industrial Construccion Indice,INEGI,Actividad Industrial,Mensual
+496548,Actividad industrial Industrias Manufactureras Indice,INEGI,Actividad Industrial,Mensual
+496216,IGAE Total Indice,INEGI,Indicador Global de la Actividad Economica,Mensual
+496223,IGAE Actividades Primarias Indice,INEGI,Indicador Global de la Actividad Economica,Mensual
+496230,IGAE Actividades Secundarias Total de Actividades Secundarias Indice,INEGI,Indicador Global de la Actividad Economica,Mensual
+496251,"IGAE (actividades secundarias, sector construcción)",INEGI,Indicador Global de la Actividad Economica,Mensual
+496244,"IGAE (actividades secundarias, sector energetico)",INEGI,Indicador Global de la Actividad Economica,Mensual
+496258,"IGAE (actividades secundarias, sector manufacturero)",INEGI,Indicador Global de la Actividad Economica,Mensual
+496237,"IGAE (actividades secundarias, sector minería)",INEGI,Indicador Global de la Actividad Economica,Mensual
+496265,IGAE Actividades Terciarias Total de Actividades Terciarias Indice,INEGI,Indicador Global de la Actividad Economica,Mensual
+496272,"IGAE (actividades terciarias, comercio al por mayor)",INEGI,Indicador Global de la Actividad Economica,Mensual
+515886,"IGAE (actividades terciarias, comercio al por menor)",INEGI,Indicador Global de la Actividad Economica,Mensual
+496279,"IGAE (actividades terciarias, transporte)",INEGI,Indicador Global de la Actividad Economica,Mensual
+496286,"IGAE (actividades terciarias, servicios financieros)",INEGI,Indicador Global de la Actividad Economica,Mensual
+496293,"IGAE (actividades terciarias, servicios profesionales)",INEGI,Indicador Global de la Actividad Economica,Mensual
+496300,"IGAE (actividades terciarias, educación)",INEGI,Indicador Global de la Actividad Economica,Mensual
+496307,"IGAE (actividades terciarias, esparcimiento)",INEGI,Indicador Global de la Actividad Economica,Mensual
+496314,"IGAE (actividades terciarias, alojamiento)",INEGI,Indicador Global de la Actividad Economica,Mensual
+496321,"IGAE (actividades terciarias, legislativas)",INEGI,Indicador Global de la Actividad Economica,Mensual
+15166,Industria automotriz Produccion de vehiculos automotores Total,INEGI,Registro Administrativo de la Industria Automotriz,Mensual
+15167,Industria automotriz Produccion de vehiculos automotores Automoviles,INEGI,Registro Administrativo de la Industria Automotriz,Mensual
+15168,"Industria automotriz Produccion de vehiculos automotores Camiones, tractocamiones y autobuses integrales",INEGI,Registro Administrativo de la Industria Automotriz,Mensual
+15169,Industria automotriz Venta al publico de automoviles y camiones  Automoviles Total,INEGI,Registro Administrativo de la Industria Automotriz,Mensual
+119328,Industria automotriz Venta al publico de automoviles y camiones  Camiones por categorias  Total,INEGI,Registro Administrativo de la Industria Automotriz,Mensual
+652372,Personal Ocupado (EMIM),INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
+652540,Horas hombre trabajadas (EMIM),INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
+652708,Remuneraciones medias reales totales,INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
+496746,Inversión Fija Bruta,INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
+628194,Indice de Precios al Consumidor,INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
+673095,Indice de Precios al Productor S/ petroleo y servicios,INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
+673096,Indice de Precios al Productor C/ petroleo y servicios,INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
+697758,Indicador de Confianza Empresarial,INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
+631427,Indicador de Confianza Empresarial (sector manufacturero),INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
+631264,Indicador de Confianza Empresarial (sector construcción),INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
+631808,Indicador de Confianza Empresarial (sector servicios),INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
+631683,Indicador de Confianza Empresarial (sector comercio),INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
+0000,f,f,f,f,57cd04de-02ae-42f8-bc8f-ef069b6452ca
+00000,Prueba0.2,INEGI,Prueba 0.2,Mensual,468c659b-6f3f-400d-93f2-22e64f1a6a14
+0000,Prueba03,INEGI,Prueba 0.3,Mensual

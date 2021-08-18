@@ -25,7 +25,7 @@ def _save_indicators_to_storage():
         os.rename(tmp_table_name, INDICATOR_TABLE)
 
 
-def update_indicator()
+# def update_indicator()
         
 def create_indicator(indicator):
     global indicators

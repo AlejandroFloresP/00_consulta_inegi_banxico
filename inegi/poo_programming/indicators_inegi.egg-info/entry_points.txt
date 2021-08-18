@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        indicators_inegi=indicators_inegi:ind
+    
