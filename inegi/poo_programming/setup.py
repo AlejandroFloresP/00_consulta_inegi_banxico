@@ -7,6 +7,8 @@ setup(
     py_modules=['indicators-inegi'],
     install_requires=[
         'Click',
+        'pandas',
+        'tabulate',
     ],
     entry_points='''
         [console_scripts]

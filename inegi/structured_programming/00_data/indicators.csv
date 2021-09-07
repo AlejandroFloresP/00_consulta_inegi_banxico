@@ -43,17 +43,17 @@
 496216,IGAE Total Indice,INEGI,Indicador Global de la Actividad Economica,Mensual
 496223,IGAE Actividades Primarias Indice,INEGI,Indicador Global de la Actividad Economica,Mensual
 496230,IGAE Actividades Secundarias Total de Actividades Secundarias Indice,INEGI,Indicador Global de la Actividad Economica,Mensual
-496251,"IGAE (actividades secundarias, sector construcción)",INEGI,Indicador Global de la Actividad Economica,Mensual
+496251,"IGAE (actividades secundarias, sector construccion)",INEGI,Indicador Global de la Actividad Economica,Mensual
 496244,"IGAE (actividades secundarias, sector energetico)",INEGI,Indicador Global de la Actividad Economica,Mensual
 496258,"IGAE (actividades secundarias, sector manufacturero)",INEGI,Indicador Global de la Actividad Economica,Mensual
-496237,"IGAE (actividades secundarias, sector minería)",INEGI,Indicador Global de la Actividad Economica,Mensual
+496237,"IGAE (actividades secundarias, sector mineria)",INEGI,Indicador Global de la Actividad Economica,Mensual
 496265,IGAE Actividades Terciarias Total de Actividades Terciarias Indice,INEGI,Indicador Global de la Actividad Economica,Mensual
 496272,"IGAE (actividades terciarias, comercio al por mayor)",INEGI,Indicador Global de la Actividad Economica,Mensual
 515886,"IGAE (actividades terciarias, comercio al por menor)",INEGI,Indicador Global de la Actividad Economica,Mensual
 496279,"IGAE (actividades terciarias, transporte)",INEGI,Indicador Global de la Actividad Economica,Mensual
 496286,"IGAE (actividades terciarias, servicios financieros)",INEGI,Indicador Global de la Actividad Economica,Mensual
 496293,"IGAE (actividades terciarias, servicios profesionales)",INEGI,Indicador Global de la Actividad Economica,Mensual
-496300,"IGAE (actividades terciarias, educación)",INEGI,Indicador Global de la Actividad Economica,Mensual
+496300,"IGAE (actividades terciarias, educacion)",INEGI,Indicador Global de la Actividad Economica,Mensual
 496307,"IGAE (actividades terciarias, esparcimiento)",INEGI,Indicador Global de la Actividad Economica,Mensual
 496314,"IGAE (actividades terciarias, alojamiento)",INEGI,Indicador Global de la Actividad Economica,Mensual
 496321,"IGAE (actividades terciarias, legislativas)",INEGI,Indicador Global de la Actividad Economica,Mensual
@@ -65,12 +65,12 @@
 652372,Personal Ocupado (EMIM),INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
 652540,Horas hombre trabajadas (EMIM),INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
 652708,Remuneraciones medias reales totales,INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
-496746,Inversión Fija Bruta,INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
+496746,Inversion Fija Bruta,INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
 628194,Indice de Precios al Consumidor,INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
 673095,Indice de Precios al Productor S/ petroleo y servicios,INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
 673096,Indice de Precios al Productor C/ petroleo y servicios,INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
 697758,Indicador de Confianza Empresarial,INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
 631427,Indicador de Confianza Empresarial (sector manufacturero),INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
-631264,Indicador de Confianza Empresarial (sector construcción),INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
+631264,Indicador de Confianza Empresarial (sector construccion),INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
 631808,Indicador de Confianza Empresarial (sector servicios),INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual
 631683,Indicador de Confianza Empresarial (sector comercio),INEGI,Encuesta Mensual de la Industria Manufacturera,Mensual

@@ -1,9 +1,11 @@
-import os, requests, sys, csv, json, datetime
+import os, requests, sys, csv, json
+# from tabulate import tabulate
 import pandas as pd
 
-INDICATOR_TABLE = 'indicators.csv'
+INDICATOR_TABLE = '00_data/indicators.csv'
 INDICATOR_SCHEMA = ['referencia', 'nombre', 'institucion', 'descripcion', 'periodicidad']
 indicators = []
+outputs= '02_outputs/data/'
 
 def _initialize_indicators_from_storage():
     with open(INDICATOR_TABLE, mode='r',  encoding='latin-1') as f:
@@ -23,9 +25,7 @@ def _save_indicators_to_storage():
         os.remove(INDICATOR_TABLE)
         f.close()
         os.rename(tmp_table_name, INDICATOR_TABLE)
-
-
-# def update_indicator()
+    
         
 def create_indicator(indicator):
     global indicators
@@ -37,6 +37,20 @@ def create_indicator(indicator):
 
 
 def list_indicators():
+#     headers = [field.capitalize() for field in INDICATOR_SCHEMA]
+#     table = []
+    
+#     for idx, indicator in enumerate(indicators):
+#         table.append(
+#             [idx,
+#              indicator['referencia'],
+#              indicator['nombre'],
+#              indicator['institucion'],
+#              indicator['descripcion'],
+#              indicator['periodicidad']])
+
+#     print(tabulate(table, headers))
+    
     print('ID | Referencia | Nombre | Institucion | Descripcion | Periodicidad')
     print('-'*50)
     
@@ -51,7 +65,7 @@ def list_indicators():
     ))
 
 
-def update_indicator(indicator_id, update_indicator_info):
+def update_indicator_metadata(indicator_id, update_indicator_info):
     global indicators
     
     if len(indicators) -1 >= indicator_id:
@@ -76,13 +90,15 @@ def search_indicator(indicator_name):
         else:
             return True
 
-def consult_indicator(reference):
+        
+def __consult_indicator_data(reference):
     url='https://www.inegi.org.mx/app/api/indicadores/desarrolladores/jsonxml/INDICATOR/'+reference+'/es/0700/false/BIE/2.0/490dcd21-44b2-fef6-0ade-e6431a8c8fb9?type=json'
     response = requests.get(url)
     
     if response.status_code==200:
         content = json.loads(response.content)
         Series = content['Series'][0]['OBSERVATIONS']
+        Series1 = content['Series'][0]['LASTUPDATE']
         
         dato_obs=[]
         fecha= []
@@ -95,7 +111,7 @@ def consult_indicator(reference):
         
         df= pd.DataFrame(list(zip(fecha,dato_obs)), columns=['Fecha', reference])
         
-    return df
+    return df, Series1
 
 
 def _get_indicator_field(field_name, message='¿Cuál es el {} del indicador?'):
@@ -123,12 +139,13 @@ def _print_welcome():
     print('Bienvenidos al programa para la consulta de indicadores del SAT')
     print('-'*50)
     print('¿Qué te gustaria hacer hoy?')
-    print('1. Actualizar indicadores')
-    print('2. Añadir indicador')
-    print('3. Buscar indicador en la lista')
-    print('4. Consultar indicador')
-    print('5. Eliminar indicador de la lista')
-    print('6. Ver lista de indicadores')
+    print('1. Actualizar datos de los indicadores')
+    print('2. Actualizar metadata de indicador')
+    print('3. Ver lista de indicadores')
+    print('4. Añadir indicador')
+    print('5. Buscar indicador en la lista')
+    print('6. Eliminar indicador de la lista')
+    
 
 
 if __name__ == '__main__':
@@ -138,15 +155,27 @@ if __name__ == '__main__':
     command = input()
     
     if command == '1':
+        with pd.ExcelWriter(outputs +'DB.xlsx') as writer:
+            for idx, indicator in enumerate(indicators):
+                df = __consult_indicator_data(indicator['referencia'])[0]
+                df.to_excel(writer, sheet_name=indicator['referencia'], index=False)
+            writer.save()
+
+    
+    elif command == '2':
         indicator_id = int(_get_indicator_field('id'))
         update_indicator_info = _get_indicator()
         
-        update_indicator(indicator_id, update_indicator_info)
-    elif command == '2':
+        update_indicator_metadata(indicator_id, update_indicator_info)
+    
+    elif command == '3':
+        list_indicators()
+        
+    elif command == '4':
         indicator = _get_indicator()
 
         create_indicator(indicator)
-    elif command == '3':
+    elif command == '5':
         indicator_name = _get_indicator_field('nombre')
         found = search_indicator(indicator_name)
 
@@ -154,18 +183,10 @@ if __name__ == '__main__':
             print('El indicador, {}, esta en la lista de indicadores'.format(indicator_name))
         else:
             print('El indicador, {}, no esta en la lista de indicadores'.format(indicator_name))
-    elif command == '4':
-        reference = _get_indicator_field('referencia')
-        
-        df = consult_indicator(reference)
-
-        df.to_excel('{}'.format(reference))
-    elif command == '5':
+    elif command == '6':
         indicator_id = int(_get_indicator_field('id'))
 
         delete_indicator(indicator_id)
-    elif command == '6':
-        list_indicators()
     else:
         print('Comando invalido')
     

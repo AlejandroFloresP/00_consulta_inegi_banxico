@@ -1,6 +1,7 @@
 import click
 from indicators.services import IndicatorService
 from indicators.models  import Indicator
+from tabulate import tabulate
 
 @click.group()
 def indicator():
@@ -42,27 +43,54 @@ def create(ctx, referencia, nombre, institucion, descripcion, periodicidad):
 @click.pass_context
 def list_ind(ctx):
     """Lista de indicadores"""
+    
     indicator_service = IndicatorService(ctx.obj['indicators_table'])
     
     indicator_list= indicator_service.list_indicators()
     
-    click.echo('Referencia  |  Nombre  |  Institucion  |  Descripcion  |  Periodicidad')
-    click.echo('*' * 100)
+    headers = [field.capitalize() for field in Indicator.schema()]
+    table = []
     
-    for i in indicator_list:
-        click.echo('{referencia}  |  {nombre}  |  {institucion}  |  {descripcion}  |  {periodicidad}'.format(
-            referencia=i['referencia'],
-            nombre=i['nombre'],
-            institucion=i['institucion'],
-            descripcion=i['descripcion'],
-            periodicidad=i['periodicidad']))
+    for idx, indicator in enumerate(indicator_list):
+        table.append(
+            [idx,
+             indicator['referencia'],
+             indicator['nombre'],
+             indicator['institucion'],
+             indicator['descripcion'],
+             indicator['periodicidad']])
 
+    print(tabulate(table, headers))
 
 @indicator.command()
+@click.argument('indicator_referencia')
 @click.pass_context
-def update(ctx, client_uid):
+def update(ctx, indicator_referencia):
     """Actualiza lista de indicadores"""
-    pass
+    indicator_service = IndicatorService(ctx.obj['indicators_table'])
+    
+    indicator_list = indicator_service.list_indicators()        
+    
+    indicator = [indicator for indicator in indicator_list if indicator['referencia'] == indicator_referencia]
+    
+    if indicator:
+        click.echo(indicator)
+        indicator = _update_indicator_flow(Indicator(**indicator[0]))
+        indicator_service.update_indicator_metadata(indicator)
+    else:
+        click.echo('Indicador no encontrado')
+        
+    
+def _update_indicator_flow(indicator):
+    click.echo('Deja vacio si no quieres modificar el valor')
+    
+    indicator.referencia = click.prompt('Nueva referencia', default = indicator.referencia)
+    indicator.nombre = click.prompt('Nuevo nombre', default = indicator.nombre)
+    indicator.institucion = click.prompt('Nueva institucion', default = indicator.institucion)
+    indicator.descripcion = click.prompt('Nueva descripcion', default = indicator.descripcion)
+    indicator.periodicidad = click.prompt('Nueva periodicidad', default = indicator.periodicidad)
+    
+    return indicator
 
 
 @indicator.command()
